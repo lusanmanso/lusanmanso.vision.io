@@ -1,0 +1,25 @@
+[project]
+name = "lusanmanso-vision-io"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Lucía", email = "45535569+lusanmanso@users.noreply.github.com" }
+]
+requires-python = ">=3.15"
+dependencies = [
+    "torch",
+    "torchvision",
+    "scikit-learn",
+    "matplotlib",
+    "pillow",
+    "jupyter",
+    "ipykernel",
+]
+
+[project.scripts]
+lusanmanso-vision-io = "lusanmanso_vision_io:main"
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
